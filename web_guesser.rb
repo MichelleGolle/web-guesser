@@ -21,5 +21,6 @@ end
 
 get '/' do
   message = message(params["guess"].to_i)
-  erb :index, :locals => {:number => NUMBER, :message => message}
+  cheat = params["cheat"]
+  erb :index, :locals => {:number => NUMBER, :message => message, :cheat => cheat}
 end

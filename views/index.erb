@@ -7,6 +7,12 @@
   </body>
 </html>
 
+<p>
+  <% if cheat == "true" %>
+    The secret number is <%= number %><br>
+  <% end %>
+</p>
+
 <form>
   <input type='text' name='guess' />
   <input type='submit' value='Guess!' />
